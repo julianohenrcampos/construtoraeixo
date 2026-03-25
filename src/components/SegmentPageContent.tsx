@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { CheckCircle, MessageCircle, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -32,6 +33,16 @@ const SegmentPageContent = ({
   efficiencyImage,
   ctaImage,
 }: SegmentPageContentProps) => {
+  useEffect(() => {
+    if (!backgroundImage) return;
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = backgroundImage;
+    document.head.appendChild(link);
+    return () => { document.head.removeChild(link); };
+  }, [backgroundImage]);
+
   return (
     <>
       {/* INSTITUTIONAL */}

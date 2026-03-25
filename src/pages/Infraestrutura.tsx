@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import PageBanner from "@/components/PageBanner";
 import SegmentPageContent from "@/components/SegmentPageContent";
-import infraSolutions from "@/assets/segments/infra_solutions.png?w=800&format=webp";
-import infraExecution from "@/assets/segments/infra_execution.png?w=800&format=webp";
-import infraEfficiency from "@/assets/segments/infra_efficiency.png?w=800&format=webp";
-import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp";
+import infraSolutions from "@/assets/segments/infra_solutions.png?w=800&format=webp&quality=75";
+import infraExecution from "@/assets/segments/infra_execution.png?w=800&format=webp&quality=75";
+import infraEfficiency from "@/assets/segments/infra_efficiency.png?w=800&format=webp&quality=75";
+import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
 import infraBg from "@/assets/segments/infra_bg.svg";
 
 const Infraestrutura = () => (

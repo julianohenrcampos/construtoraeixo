@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import PageBanner from "@/components/PageBanner";
 import SegmentPageContent from "@/components/SegmentPageContent";
-import prediaisStructure from "@/assets/segments/prediais_structure.png?w=800&format=webp";
-import prediaisDetail from "@/assets/segments/prediais_detail.png?w=800&format=webp";
-import prediaisResult from "@/assets/segments/prediais_result.png?w=800&format=webp";
-import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp";
+import prediaisStructure from "@/assets/segments/prediais_structure.png?w=800&format=webp&quality=75";
+import prediaisDetail from "@/assets/segments/prediais_detail.png?w=800&format=webp&quality=75";
+import prediaisResult from "@/assets/segments/prediais_result.png?w=800&format=webp&quality=75";
+import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
 import prediaisBg from "@/assets/segments/prediais_bg.svg";
 
 const Prediais = () => (

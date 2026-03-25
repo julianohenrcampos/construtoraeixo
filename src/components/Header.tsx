@@ -119,13 +119,14 @@ const Header = () => {
         }`}
       >
         <div className="max-w-3xl mx-auto px-4">
-          <div className="rounded-xl bg-transparent py-3 px-4">
-            <div className="grid grid-cols-3 gap-x-4 gap-y-1">
+          <div className="py-4 px-6">
+            <div className="grid grid-cols-3 gap-x-4 gap-y-2">
               {segments.map((item) => (
                 <Link
                   key={item.label}
                   to={item.href}
-                  className="text-sm font-bold text-white hover:text-blue-400 hover:translate-x-1 transition-all duration-200"
+                  onClick={() => setSegmentosOpen(false)}
+                  className="text-sm font-bold text-white hover:text-white transition-all duration-200 px-4 py-2 rounded-full border border-white/20 hover:border-transparent bg-[#0B1B3B] hover:bg-gradient-to-r hover:from-primary hover:to-secondary flex items-center justify-center text-center"
                 >
                   {item.label}
                 </Link>
