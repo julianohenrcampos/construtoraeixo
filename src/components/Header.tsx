@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/eixoconstrutora.svg";
 
 const menuItems = [
   { title: "Home", href: "/" },
@@ -10,15 +11,16 @@ const menuItems = [
 ];
 
 const segments = [
-  "Gerenciamento e Consultoria",
-  "Prediais",
-  "Energia",
-  "Obras de Arte Especiais",
-  "Terraplanagem",
-  "Drenagem",
-  "Limpeza Urbana",
-  "Manutenção",
-  "Óleo e Gás",
+  { label: "Infraestrutura / Gerenciamento", href: "/infraestrutura" },
+  { label: "Obras e Serviços", href: "/obras-servicos" },
+  { label: "Prediais", href: "/prediais" },
+  { label: "Energia", href: "/servicos" },
+  { label: "Obras de Arte Especiais", href: "/servicos" },
+  { label: "Terraplanagem", href: "/servicos" },
+  { label: "Drenagem", href: "/servicos" },
+  { label: "Limpeza Urbana", href: "/servicos" },
+  { label: "Manutenção", href: "/servicos" },
+  { label: "Óleo e Gás", href: "/servicos" },
 ];
 
 const Header = () => {
@@ -41,9 +43,10 @@ const Header = () => {
       }`}
       onMouseLeave={() => setSegmentosOpen(false)}
     >
-      <div className="flex items-center justify-center gap-10 px-6 py-4">
-        {/* LOGO */}
-        <Link to="/" className="font-bold text-lg tracking-wide">
+      <div className="max-w-7xl mx-auto w-full flex items-center px-4 sm:px-6 py-3 gap-8 lg:gap-12">
+        {/* LOGO + BRAND */}
+        <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-wide shrink-0">
+          <img src={logo} alt="Logo Construtora Eixo" className="w-8 h-8 object-contain" />
           <span className="text-gradient">CONSTRUTORA</span>{" "}
           <span className="text-primary-foreground">EIXO</span>
         </Link>
@@ -92,14 +95,14 @@ const Header = () => {
         {/* BOTÃO DESKTOP */}
         <a
           href="mailto:contato@eixoengenharia.com.br?subject=Solicitação de Orçamento"
-          className="hidden lg:inline-block ml-6 px-5 py-2.5 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground text-sm font-medium transition hover:opacity-90"
+          className="hidden lg:inline-block ml-auto px-5 py-2.5 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground text-sm font-medium transition hover:opacity-90 shrink-0"
         >
           Solicitar Orçamento
         </a>
 
         {/* HAMBURGER MOBILE */}
         <button
-          className="lg:hidden text-primary-foreground"
+          className="lg:hidden ml-auto text-primary-foreground"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menu"
         >
@@ -120,11 +123,11 @@ const Header = () => {
             <div className="grid grid-cols-3 gap-x-4 gap-y-1">
               {segments.map((item) => (
                 <Link
-                  key={item}
-                  to="/servicos"
+                  key={item.label}
+                  to={item.href}
                   className="text-sm font-bold text-white hover:text-blue-400 hover:translate-x-1 transition-all duration-200"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </div>
@@ -132,16 +135,16 @@ const Header = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU — horizontal scrollable bar */}
       {isOpen && (
-        <div className="lg:hidden w-full bg-[#0A0F2C]/95 backdrop-blur-sm p-6 animate-fade-in">
-          <ul className="flex flex-col gap-4">
+        <div className="lg:hidden w-full bg-transparent animate-fade-in">
+          <ul className="flex flex-wrap items-center justify-center gap-1.5 px-4 py-2">
             {menuItems.slice(0, 2).map((item) => (
               <li key={item.href}>
                 <Link
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-sm font-bold text-white hover:text-blue-400 transition-colors duration-300 py-2 block"
+                  className="text-xs font-bold text-white hover:text-[#23B5EB] transition-colors duration-300 px-3 py-2 rounded-full border border-white/20 hover:border-[#23B5EB]/50 hover:bg-[#23B5EB]/10 block whitespace-nowrap"
                 >
                   {item.title}
                 </Link>
@@ -151,7 +154,7 @@ const Header = () => {
               <Link
                 to="/servicos"
                 onClick={() => setIsOpen(false)}
-                className="text-sm font-bold text-white hover:text-blue-400 transition-colors duration-300 py-2 block"
+                className="text-xs font-bold text-white hover:text-[#23B5EB] transition-colors duration-300 px-3 py-2 rounded-full border border-white/20 hover:border-[#23B5EB]/50 hover:bg-[#23B5EB]/10 block whitespace-nowrap"
               >
                 Segmentos
               </Link>
@@ -161,7 +164,7 @@ const Header = () => {
                 <Link
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-sm font-bold text-white hover:text-blue-400 transition-colors duration-300 py-2 block"
+                  className="text-xs font-bold text-white hover:text-[#23B5EB] transition-colors duration-300 px-3 py-2 rounded-full border border-white/20 hover:border-[#23B5EB]/50 hover:bg-[#23B5EB]/10 block whitespace-nowrap"
                 >
                   {item.title}
                 </Link>
@@ -169,11 +172,11 @@ const Header = () => {
             ))}
             <li>
               <a
-                href="mailto:contato@eixoengenharia.com.br?subject=Solicitação de Orçamento"
+                href="mailto:contato@construtoraeixo.com.br?subject=Solicitação de Orçamento"
                 onClick={() => setIsOpen(false)}
-                className="inline-block px-5 py-2.5 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground text-sm font-medium mt-2"
+                className="text-xs font-bold text-primary-foreground px-3 py-2 rounded-full bg-gradient-to-r from-primary to-secondary whitespace-nowrap block"
               >
-                Solicitar Orçamento
+                Orçamento
               </a>
             </li>
           </ul>

@@ -19,16 +19,16 @@ const AboutSection = () => {
               Excelência em <span className="text-gradient">infraestrutura</span>
             </h2>
             <div className="max-w-xl space-y-4">
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-left md:text-justify">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-justify">
                 A Construtora Eixo é uma empresa de engenharia especializada em gerenciamento e consultoria de projetos de infraestrutura, atuando de forma estratégica no planejamento, coordenação e execução de obras com elevado padrão técnico.
               </p>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-left md:text-justify">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-justify">
                 Atendemos demandas públicas e privadas com soluções integradas que envolvem desde a estruturação e gestão dos projetos até a execução das obras, garantindo eficiência, controle, cumprimento de prazos e excelência em cada etapa.
               </p>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-left md:text-justify">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-justify">
                 Com uma equipe altamente qualificada e uma frota própria de equipamentos, asseguramos maior previsibilidade, segurança e desempenho operacional, sempre alinhados às melhores práticas de engenharia.
               </p>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-left md:text-justify">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-justify">
                 Mais do que executar obras, nosso compromisso é orientar, planejar e gerenciar projetos que contribuam para o desenvolvimento sustentável da infraestrutura, promovendo soluções que gerem valor, eficiência e melhoria da qualidade de vida da população.
               </p>
             </div>

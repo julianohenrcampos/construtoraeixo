@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook } from "lucide-react";
+import { MapPin, Mail, Instagram, Linkedin, Facebook } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "A Empresa", href: "/a-empresa" },
-  { label: "Serviços", href: "/servicos" },
+  { label: "Segmentos", href: "/servicos" },
   { label: "Equipamentos", href: "/equipamentos" },
   { label: "Contato", href: "/contato" },
 ];
@@ -46,15 +46,11 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-blue-glow shrink-0 mt-0.5" />
-                <span className="text-navy-foreground/60 text-sm">Rua Sao Jose, 00020, SAL 2001, Centro- RJ</span>
+                <span className="text-navy-foreground/60 text-sm">Rua São José, 20, Sala 2001, Centro</span>
               </div>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-glow transition-colors">
-                <Phone size={16} className="text-blue-glow shrink-0" />
-                <span className="text-navy-foreground/60 text-sm hover:text-blue-glow transition-colors">(00) 0000-0000</span>
-              </a>
-              <a href="mailto:contato@construtoraeixocom.br" className="flex items-center gap-3 hover:text-blue-glow transition-colors">
+              <a href="mailto:contato@construtoraeixo.com.br" className="flex items-center gap-3 hover:text-blue-glow transition-colors">
                 <Mail size={16} className="text-blue-glow shrink-0" />
-                <span className="text-navy-foreground/60 text-sm hover:text-blue-glow transition-colors">contato@eixoengenharia.com.br</span>
+                <span className="text-navy-foreground/60 text-sm hover:text-blue-glow transition-colors">contato@construtoraeixo.com.br</span>
               </a>
             </div>
           </div>

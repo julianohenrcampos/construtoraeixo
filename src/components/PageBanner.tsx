@@ -14,7 +14,7 @@ const PageBanner = ({ title, subtitle }: PageBannerProps) => {
           {title}
         </h1>
         {subtitle && (
-          <p className="text-primary-foreground/60 text-lg max-w-xl mx-auto">{subtitle}</p>
+          <p className="hidden md:block text-primary-foreground/60 text-lg max-w-xl mx-auto">{subtitle}</p>
         )}
       </div>
     </section>

@@ -7,10 +7,10 @@ const CtaSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-transparent" />
       <div className="container-max relative z-10 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
-          Precisa de uma solução em engenharia?
+          ENGENHARIA PARA SUPERAR GRANDES DESAFIOS
         </h2>
         <p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-          Fale com a Construtora Eixo. Estamos prontos para transformar seu projeto em realidade.
+          Otimize seus processos, reduza custos e aumente a eficiência operacional.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
