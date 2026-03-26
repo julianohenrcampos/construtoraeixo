@@ -5,7 +5,7 @@ import pedreiraSolutions from "@/assets/segments/pedreira_solutions.jpg?w=800&fo
 import pedreiraExecution from "@/assets/segments/pedreira_execution.jpg?w=800&format=webp&quality=75";
 import pedreiraEfficiency from "@/assets/segments/pedreira_efficiency.jpg?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import pedreiraBg from "@/assets/segments/pedreira_bg.svg";
+import pedreiraBg from "@/assets/segments/pedreira_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const PedreiraSeg = () => (
   <Layout>

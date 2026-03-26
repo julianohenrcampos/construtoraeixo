@@ -25,7 +25,7 @@ const Header = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b ${
         scrolled
-          ? "bg-[#0B1B3B]/90 backdrop-blur-md shadow-md border-white/10"
+          ? "bg-[#0B1B3B]/95 shadow-md border-white/10"
           : "bg-transparent border-transparent"
       }`}
     >

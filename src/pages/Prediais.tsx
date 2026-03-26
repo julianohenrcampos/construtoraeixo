@@ -5,7 +5,7 @@ import prediaisStructure from "@/assets/segments/prediais_structure.png?w=800&fo
 import prediaisDetail from "@/assets/segments/prediais_detail.png?w=800&format=webp&quality=75";
 import prediaisResult from "@/assets/segments/prediais_result.png?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import prediaisBg from "@/assets/segments/prediais_bg.svg";
+import prediaisBg from "@/assets/segments/prediais_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const Prediais = () => (
   <Layout>

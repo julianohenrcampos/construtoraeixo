@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { memo } from "react";
 import { CheckCircle, MessageCircle, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,7 +7,6 @@ interface SegmentPageContentProps {
   solutions: { title: string; items: string[] };
   differentials: { title: string; items: string[] };
   efficiency: { intro: string; items: string[]; outro: string };
-  
   backgroundImage?: string;
   solutionsImage?: string;
   differentialsImage?: string;
@@ -15,14 +14,15 @@ interface SegmentPageContentProps {
   ctaImage?: string;
 }
 
-const CheckItem = ({ text }: { text: string }) => (
+const CheckItem = memo(({ text }: { text: string }) => (
   <li className="flex items-start gap-3">
     <CheckCircle className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#23B5EB" }} />
     <span className="text-primary-foreground/90 text-sm md:text-base text-left">{text}</span>
   </li>
-);
+));
+CheckItem.displayName = "CheckItem";
 
-const SegmentPageContent = ({
+const SegmentPageContent = memo(({
   institutionalParagraphs,
   solutions,
   differentials,
@@ -33,16 +33,6 @@ const SegmentPageContent = ({
   efficiencyImage,
   ctaImage,
 }: SegmentPageContentProps) => {
-  useEffect(() => {
-    if (!backgroundImage) return;
-    const link = document.createElement("link");
-    link.rel = "preload";
-    link.as = "image";
-    link.href = backgroundImage;
-    document.head.appendChild(link);
-    return () => { document.head.removeChild(link); };
-  }, [backgroundImage]);
-
   return (
     <>
       {/* INSTITUTIONAL */}
@@ -64,7 +54,7 @@ const SegmentPageContent = ({
           <div className="absolute inset-0 bg-[#0A0F2C]" />
         )}
         <div className="relative z-10 max-w-3xl mx-auto px-4">
-          <div className="bg-[#0A0F2C]/70 backdrop-blur-sm rounded-xl border border-white/10 p-8 md:p-10">
+          <div className="bg-[#0A0F2C]/70 rounded-xl border border-white/10 p-8 md:p-10">
             <p className="uppercase tracking-widest text-blue-500 mb-4 text-center text-3xl font-bold">Sobre</p>
             {institutionalParagraphs.map((p, i) => (
               <p key={i} className="text-primary-foreground/80 text-base md:text-lg leading-relaxed mb-4 last:mb-0 text-justify">
@@ -181,7 +171,7 @@ const SegmentPageContent = ({
           </>
         )}
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-          <div className="bg-[#050816]/70 backdrop-blur-sm rounded-xl border border-white/10 p-8 md:p-10">
+          <div className="bg-[#050816]/70 rounded-xl border border-white/10 p-8 md:p-10">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
               ENGENHARIA PARA SUPERAR GRANDES DESAFIOS
             </h2>
@@ -189,24 +179,26 @@ const SegmentPageContent = ({
               Otimize seus processos, reduza custos e aumente a eficiência operacional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-primary-foreground text-primary font-semibold px-8 py-6 text-base hover:bg-primary-foreground/90">
-                <MessageCircle size={20} className="mr-2" />
-                WhatsApp
-              </Button>
-            </a>
-            <a href="mailto:contato@construtoraeixo.com.br?subject=Solicitação de Orçamento">
-              <Button size="lg" variant="outline" className="border-blue-glow/50 text-blue-glow hover:bg-primary-foreground/10 hover:text-primary-foreground font-semibold px-8 py-6 text-base">
-                <FileText size={20} className="mr-2" />
-                Solicitar Orçamento
-              </Button>
-            </a>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-primary-foreground text-primary font-semibold px-8 py-6 text-base hover:bg-primary-foreground/90">
+                  <MessageCircle size={20} className="mr-2" />
+                  WhatsApp
+                </Button>
+              </a>
+              <a href="mailto:contato@construtoraeixo.com.br?subject=Solicitação de Orçamento">
+                <Button size="lg" variant="outline" className="border-blue-glow/50 text-blue-glow hover:bg-primary-foreground/10 hover:text-primary-foreground font-semibold px-8 py-6 text-base">
+                  <FileText size={20} className="mr-2" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </>
   );
-};
+});
+
+SegmentPageContent.displayName = "SegmentPageContent";
 
 export default SegmentPageContent;

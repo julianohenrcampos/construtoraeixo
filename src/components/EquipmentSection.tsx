@@ -1,8 +1,9 @@
-import maquinasPesadasImg from "@/assets/maquinas_pesadas.svg";
+import { memo } from "react";
+import maquinasPesadasImg from "@/assets/maquinas_pesadas.jpg?w=800&format=webp&quality=75";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
-const EquipmentSection = () => {
+const EquipmentSection = memo(() => {
   return (
     <section id="equipamentos" className="section-padding bg-muted">
       <div className="container-max flex flex-col items-center">
@@ -35,6 +36,8 @@ const EquipmentSection = () => {
       </div>
     </section>
   );
-};
+});
+
+EquipmentSection.displayName = "EquipmentSection";
 
 export default EquipmentSection;

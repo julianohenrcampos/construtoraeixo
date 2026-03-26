@@ -5,7 +5,7 @@ import aterroSolutions from "@/assets/segments/aterro_solutions.jpg?w=800&format
 import aterroExecution from "@/assets/segments/aterro_execution.jpg?w=800&format=webp&quality=75";
 import aterroEfficiency from "@/assets/segments/aterro_efficiency.jpg?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import aterroBg from "@/assets/segments/aterro_bg.svg";
+import aterroBg from "@/assets/segments/aterro_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const AterroAgregados = () => (
   <Layout>

@@ -5,7 +5,7 @@ import obrasTeam from "@/assets/segments/obras_team.png?w=800&format=webp&qualit
 import obrasSupervision from "@/assets/segments/obras_supervision.png?w=800&format=webp&quality=75";
 import obrasOperation from "@/assets/segments/obras_operation.png?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import obrasBg from "@/assets/segments/obras_bg.svg";
+import obrasBg from "@/assets/segments/obras_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const ObrasServicos = () => (
   <Layout>

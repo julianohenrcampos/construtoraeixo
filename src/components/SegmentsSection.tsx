@@ -1,15 +1,15 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, memo } from "react";
 import { Link } from "react-router-dom";
 import bridgeImg from "@/assets/bridge.jpg?w=800&format=webp&quality=75";
-import earthworkImg from "@/assets/terraplanagem.svg";
+import earthworkImg from "@/assets/terraplanagem.jpg?w=800&format=webp&quality=75";
 import projectsImg from "@/assets/projects.jpg?w=800&format=webp&quality=75";
-import highwayImg from "@/assets/prediais.svg";
-import drainageImg from "@/assets/energia.svg";
-import drainageSegmentImg from "@/assets/drenagem_segment.svg";
-import limpezaUrbanaImg from "@/assets/limpeza_urbana.svg";
-import manutencaoImg from "@/assets/manutencao.svg";
+import highwayImg from "@/assets/prediais.jpg?w=800&format=webp&quality=75";
+import drainageImg from "@/assets/energia.jpg?w=800&format=webp&quality=75";
+import drainageSegmentImg from "@/assets/drenagem_segment.jpg?w=800&format=webp&quality=75";
+import limpezaUrbanaImg from "@/assets/limpeza_urbana.jpg?w=800&format=webp&quality=75";
+import manutencaoImg from "@/assets/manutencao.jpg?w=800&format=webp&quality=75";
 import oleoGasImg from "@/assets/oleo_gas.jpg?w=800&format=webp&quality=75";
-import imagemObraImg from "@/assets/imagem_obra.svg";
+import imagemObraImg from "@/assets/imagem_obra.jpg?w=800&format=webp&quality=75";
 import aterroImg from "@/assets/segments/aterro_solutions.jpg?w=800&format=webp&quality=75";
 import pedreiraImg from "@/assets/segments/pedreira_solutions.jpg?w=800&format=webp&quality=75";
 import cbuqImg from "@/assets/segments/cbuq_solutions.jpg?w=800&format=webp&quality=75";
@@ -30,12 +30,12 @@ const segments = [
   { title: "Óleo e Gás", image: oleoGasImg, desc: "Infraestrutura para o setor de óleo e gás." },
 ];
 
-const CardContent = ({ segment }: { segment: typeof segments[number] }) => (
+const CardContent = memo(({ segment }: { segment: typeof segments[number] }) => (
   <>
     <img
       src={segment.image}
       alt={segment.title}
-      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 will-change-transform"
       loading="lazy"
       decoding="async"
       width={800}
@@ -47,14 +47,15 @@ const CardContent = ({ segment }: { segment: typeof segments[number] }) => (
       <p className="text-primary-foreground/70 text-sm">{segment.desc}</p>
     </div>
   </>
-);
+));
+CardContent.displayName = "CardContent";
 
-const MobileCardContent = ({ segment }: { segment: typeof segments[number] }) => (
+const MobileCardContent = memo(({ segment }: { segment: typeof segments[number] }) => (
   <>
     <img
       src={segment.image}
       alt={segment.title}
-      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      className="absolute inset-0 w-full h-full object-cover will-change-transform"
       loading="lazy"
       decoding="async"
       width={800}
@@ -66,7 +67,8 @@ const MobileCardContent = ({ segment }: { segment: typeof segments[number] }) =>
       <p className="text-primary-foreground/70 text-sm">{segment.desc}</p>
     </div>
   </>
-);
+));
+MobileCardContent.displayName = "MobileCardContent";
 
 const SegmentsSection = () => {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);

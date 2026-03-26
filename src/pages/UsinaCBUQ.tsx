@@ -5,7 +5,7 @@ import cbuqSolutions from "@/assets/segments/cbuq_solutions.jpg?w=800&format=web
 import cbuqExecution from "@/assets/segments/cbuq_execution.jpg?w=800&format=webp&quality=75";
 import cbuqEfficiency from "@/assets/segments/cbuq_efficiency.jpg?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import cbuqBg from "@/assets/segments/cbuq_bg.svg";
+import cbuqBg from "@/assets/segments/cbuq_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const UsinaCBUQ = () => (
   <Layout>

@@ -5,7 +5,7 @@ import infraSolutions from "@/assets/segments/infra_solutions.png?w=800&format=w
 import infraExecution from "@/assets/segments/infra_execution.png?w=800&format=webp&quality=75";
 import infraEfficiency from "@/assets/segments/infra_efficiency.png?w=800&format=webp&quality=75";
 import ctaEngineers from "@/assets/segments/cta_engineers.png?w=800&format=webp&quality=75";
-import infraBg from "@/assets/segments/infra_bg.svg";
+import infraBg from "@/assets/segments/infra_bg_opt.jpg?w=1920&format=webp&quality=75";
 
 const Infraestrutura = () => (
   <Layout>
