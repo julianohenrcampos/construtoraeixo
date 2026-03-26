@@ -11,6 +11,9 @@ import Contato from "./pages/Contato";
 import Infraestrutura from "./pages/Infraestrutura";
 import ObrasServicos from "./pages/ObrasServicos";
 import Prediais from "./pages/Prediais";
+import AterroAgregados from "./pages/AterroAgregados";
+import PedreiraSeg from "./pages/PedreiraSeg";
+import UsinaCBUQ from "./pages/UsinaCBUQ";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,9 @@ const App = () => (
           <Route path="/infraestrutura" element={<Infraestrutura />} />
           <Route path="/obras-servicos" element={<ObrasServicos />} />
           <Route path="/prediais" element={<Prediais />} />
+          <Route path="/aterro-agregados" element={<AterroAgregados />} />
+          <Route path="/pedreira" element={<PedreiraSeg />} />
+          <Route path="/usina-cbuq" element={<UsinaCBUQ />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import aboutImg from "@/assets/about.jpg";
+import aboutImg from "@/assets/about.jpg?w=800&format=webp&quality=75";
 import { Shield, Award, Users, TrendingUp } from "lucide-react";
 
 const features = [
@@ -51,6 +51,7 @@ const AboutSection = () => {
               alt="Equipe de engenheiros"
               className="rounded-lg shadow-elevated w-full object-cover h-[500px]"
               loading="lazy"
+              decoding="async"
               width={800}
               height={600}
             />

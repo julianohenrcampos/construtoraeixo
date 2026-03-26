@@ -22,34 +22,34 @@ const Prediais = () => (
       solutions={{
         title: "Nossas Soluções",
         items: [
-          "Execução de obras prediais",
-          "Reformas e ampliações",
-          "Gerenciamento de obras",
-          "Levantamento topográfico",
-          "Estudos de sondagem",
-          "Compatibilização de projetos",
-          "Adequação às normas técnicas",
+          "Execução de obras prediais.",
+          "Reformas e ampliações.",
+          "Gerenciamento de obras.",
+          "Levantamento topográfico.",
+          "Estudos de sondagem.",
+          "Compatibilização de projetos.",
+          "Adequação às normas técnicas.",
         ],
       }}
       solutionsImage={prediaisStructure}
       differentials={{
         title: "Diferenciais dos Serviços",
         items: [
-          "Aplicação de BIM para maior precisão e previsibilidade",
-          "Integração entre disciplinas (estrutura, elétrica, hidráulica)",
-          "Planejamento eficiente e controle de cronograma",
-          "Redução de retrabalho e inconsistências",
-          "Gestão do ciclo completo do empreendimento",
+          "Aplicação de BIM para maior precisão e previsibilidade.",
+          "Integração entre disciplinas (estrutura, elétrica, hidráulica).",
+          "Planejamento eficiente e controle de cronograma.",
+          "Redução de retrabalho e inconsistências.",
+          "Gestão do ciclo completo do empreendimento.",
         ],
       }}
       differentialsImage={prediaisDetail}
       efficiency={{
         intro: "A Eixo potencializa a execução de obras prediais por meio de:",
         items: [
-          "Controle tecnológico próprio",
-          "Estrutura operacional integrada",
-          "Otimização de recursos",
-          "Redução de custos e prazos",
+          "Controle tecnológico próprio.",
+          "Estrutura operacional integrada.",
+          "Otimização de recursos.",
+          "Redução de custos e prazos.",
         ],
         outro: "Nosso modelo garante maior eficiência e qualidade na entrega final.",
       }}

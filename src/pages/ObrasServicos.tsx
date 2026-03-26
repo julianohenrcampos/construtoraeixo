@@ -22,34 +22,34 @@ const ObrasServicos = () => (
       solutions={{
         title: "Nossas Soluções",
         items: [
-          "Execução de obras de infraestrutura",
-          "Execução de obras de recuperação ambiental",
-          "Obras prediais e reformas",
-          "Serviços técnicos especializados",
-          "Gestão e coordenação de equipes em campo",
-          "Execução de projetos com alto grau de complexidade",
+          "Execução de obras de infraestrutura.",
+          "Execução de obras de recuperação ambiental.",
+          "Obras prediais e reformas.",
+          "Serviços técnicos especializados.",
+          "Gestão e coordenação de equipes em campo.",
+          "Execução de projetos com alto grau de complexidade.",
         ],
       }}
       solutionsImage={obrasTeam}
       differentials={{
         title: "Diferenciais que Fazem a Diferença",
         items: [
-          "Equipe técnica experiente e qualificada",
-          "Planejamento eficiente e execução controlada",
-          "Alto padrão de qualidade nas entregas",
-          "Cumprimento rigoroso de prazos",
-          "Aplicação de soluções técnicas inovadoras",
-          "Gestão orientada à produtividade",
+          "Equipe técnica experiente e qualificada.",
+          "Planejamento eficiente e execução controlada.",
+          "Alto padrão de qualidade nas entregas.",
+          "Cumprimento rigoroso de prazos.",
+          "Aplicação de soluções técnicas inovadoras.",
+          "Gestão orientada à produtividade.",
         ],
       }}
       differentialsImage={obrasSupervision}
       efficiency={{
         intro: "Nosso modelo operacional garante vantagem competitiva em todas as obras:",
         items: [
-          "Redução de custos operacionais",
-          "Maior controle sobre a cadeia produtiva",
-          "Otimização de recursos",
-          "Agilidade na execução",
+          "Redução de custos operacionais.",
+          "Maior controle sobre a cadeia produtiva.",
+          "Otimização de recursos.",
+          "Agilidade na execução.",
         ],
         outro: "A integração entre nossos recursos próprios e a engenharia aplicada permite maior eficiência e confiabilidade.",
       }}

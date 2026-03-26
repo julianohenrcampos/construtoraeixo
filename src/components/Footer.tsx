@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-blue-glow shrink-0 mt-0.5" />
-                <span className="text-navy-foreground/60 text-sm">Rua São José, 20, Sala 2001, Centro</span>
+                <span className="text-navy-foreground/60 text-sm"><span className="text-navy-foreground/60 text-sm">Rua São José, 20, 20° andar, Centro</span></span>
               </div>
               <a href="mailto:contato@construtoraeixo.com.br" className="flex items-center gap-3 hover:text-blue-glow transition-colors">
                 <Mail size={16} className="text-blue-glow shrink-0" />

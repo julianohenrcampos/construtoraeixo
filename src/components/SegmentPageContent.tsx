@@ -18,7 +18,7 @@ interface SegmentPageContentProps {
 const CheckItem = ({ text }: { text: string }) => (
   <li className="flex items-start gap-3">
     <CheckCircle className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#23B5EB" }} />
-    <span className="text-primary-foreground/90 text-sm md:text-base text-justify">{text}</span>
+    <span className="text-primary-foreground/90 text-sm md:text-base text-left">{text}</span>
   </li>
 );
 
@@ -65,7 +65,7 @@ const SegmentPageContent = ({
         )}
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <div className="bg-[#0A0F2C]/70 backdrop-blur-sm rounded-xl border border-white/10 p-8 md:p-10">
-            <p className="text-xs uppercase tracking-widest text-blue-500 mb-4 text-center">Sobre</p>
+            <p className="uppercase tracking-widest text-blue-500 mb-4 text-center text-3xl font-bold">Sobre</p>
             {institutionalParagraphs.map((p, i) => (
               <p key={i} className="text-primary-foreground/80 text-base md:text-lg leading-relaxed mb-4 last:mb-0 text-justify">
                 {p}
@@ -78,7 +78,7 @@ const SegmentPageContent = ({
       {/* SOLUTIONS */}
       <section className="bg-[#060B1A] py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4">
-          <p className="text-xs uppercase tracking-widest text-blue-500 mb-3 text-center">Soluções</p>
+          <p className="text-xs uppercase tracking-widest text-blue-500 mb-3 text-center">​</p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground text-center mb-10">
             {solutions.title}
           </h2>

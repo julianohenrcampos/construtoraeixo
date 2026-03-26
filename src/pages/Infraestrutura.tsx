@@ -22,36 +22,36 @@ const Infraestrutura = () => (
       solutions={{
         title: "Nossas Soluções",
         items: [
-          "Gerenciamento e supervisão de projetos de infraestrutura",
-          "Fiscalização técnica de obras e serviços",
-          "Estudos de viabilidade técnica e econômica",
-          "Análise crítica e reestruturação de projetos",
-          "Diagnóstico técnico e otimização de soluções",
-          "Estruturação de projetos com base em metodologias modernas (PMI e FEL)",
-          "Desenvolvimento de soluções para obras públicas e privadas",
+          "Gerenciamento e supervisão de projetos de infraestrutura.",
+          "Fiscalização técnica de obras e serviços.",
+          "Estudos de viabilidade técnica e econômica.",
+          "Análise crítica e reestruturação de projetos.",
+          "Diagnóstico técnico e otimização de soluções.",
+          "Estruturação de projetos com base em metodologias modernas (PMI e FEL).",
+          "Desenvolvimento de soluções para obras públicas e privadas.",
         ],
       }}
       solutionsImage={infraSolutions}
       differentials={{
         title: "Diferenciais que Elevam o Padrão da Engenharia",
         items: [
-          "Aplicação de metodologia BIM (Building Information Modeling)",
-          "Planejamento estruturado com base em FEL (Front-End Loading)",
-          "Integração multidisciplinar de projetos",
-          "Controle rigoroso de prazos e custos",
-          "Identificação antecipada de riscos e inconsistências",
-          "Equipe técnica altamente qualificada",
-          "Redução de retrabalho e aumento da produtividade",
+          "Aplicação de metodologia BIM (Building Information Modeling).",
+          "Planejamento estruturado com base em FEL (Front-End Loading).",
+          "Integração multidisciplinar de projetos.",
+          "Controle rigoroso de prazos e custos.",
+          "Identificação antecipada de riscos e inconsistências.",
+          "Equipe técnica altamente qualificada.",
+          "Redução de retrabalho e aumento da produtividade.",
         ],
       }}
       differentialsImage={infraExecution}
       efficiency={{
         intro: "A Eixo se destaca pela sua estrutura própria e capacidade operacional, garantindo maior autonomia e controle em todas as etapas do projeto.",
         items: [
-          "Produção própria de insumos",
-          "Controle tecnológico com laboratório especializado",
-          "Frota moderna de equipamentos",
-          "Integração entre planejamento e execução",
+          "Produção própria de insumos.",
+          "Controle tecnológico com laboratório especializado.",
+          "Frota moderna de equipamentos.",
+          "Integração entre planejamento e execução.",
         ],
         outro: "Essa estrutura permite maior agilidade, redução de custos e alto padrão de qualidade na entrega.",
       }}
